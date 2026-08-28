@@ -95,7 +95,7 @@ function createHeart() {
 ========================================= */
 nextButton.addEventListener("click", function() {
     showScene(flowerScene);
-    startMusic();
+    
     for (let i = 0; i < 15; i++) {
         setTimeout(createFlower, i * 150);
     }

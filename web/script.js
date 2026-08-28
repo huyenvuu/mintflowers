@@ -29,12 +29,23 @@ function showScene(scene) {
 ========================================= */
 function startMusic() {
     music.volume = 0.7;
-    music.muted = false;
-    music.play().then(function() {
-        console.log("Music started successfully!");
-    }).catch(function(error) {
-        console.log("Không thể tự động phát nhạc:", error);
-    });
+
+    music.currentTime = 0;
+
+    const playPromise = music.play();
+
+    if (playPromise !== undefined) {
+        playPromise
+            .then(function () {
+                console.log("🎵 Music đang phát");
+                console.log("Paused:", music.paused);
+                console.log("Volume:", music.volume);
+                console.log("Current time:", music.currentTime);
+            })
+            .catch(function (error) {
+                console.error("❌ Không phát được nhạc:", error);
+            });
+    }
 }
 
 /* =========================================

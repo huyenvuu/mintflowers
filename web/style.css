@@ -59,10 +59,9 @@ body {
 
 .intro-image video {
     width: 200px;
-    height: 200px;
+    height: auto;
     display: block;
     object-fit: contain;
-    margin: 0 auto;
     background: transparent;
 }
 

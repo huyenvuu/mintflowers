@@ -148,17 +148,10 @@ endingButton.addEventListener("click", function() {
     showScene(endingScene);
 
     // Reset ảnh
-    endingImage1.classList.remove("show");
     endingImage2.classList.remove("show");
 
-    // Ảnh 1 xuất hiện
-    setTimeout(function() {
-        endingImage1.classList.add("show");
-    }, 300);
-
-    // Sau 3 giây, ảnh 2 xuất hiện
     setTimeout(function() {
         endingImage2.classList.add("show");
-    }, 1800);
+    }, 800);
 
 });

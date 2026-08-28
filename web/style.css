@@ -51,9 +51,9 @@ body {
     background: #EAF5F7;
 }
 
-.intro-image {
-    width: 180px;
-    height: 180px;
+.intro-image img{
+    width: 200px;
+    height: auto;
     margin-top: 15px;
     margin-bottom: 8px;
     display: flex;
@@ -63,8 +63,8 @@ body {
 }
 
 .intro-image video {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     display: block;
     object-fit: contain;
     background: #EAF5F7;
@@ -374,10 +374,6 @@ button:active {
     opacity: 0;
     transform: translateY(25px) scale(0.95);
     object-fit: cover;
-}
-
-#endingImage1.show {
-    animation: imageAppear 1.2s ease forwards;
 }
 
 #endingImage2.show {

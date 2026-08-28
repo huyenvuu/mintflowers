@@ -138,6 +138,20 @@ button:active {
     margin-top: 20px;
 }
 
+.flower-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flower-image img {
+    width: 320px;
+    max-width: 80vw;
+     height: auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(83, 114, 124, 0.15);
+}
 /* =========================================
    LETTER
 ========================================= */
@@ -165,16 +179,21 @@ button:active {
 
 .letter h2 {
     text-align: center;
-    font-family: cursive;
+    font-family: "Quicksand", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
     color: #B85F70;
-    margin: 10px 0 5px;
+    margin: 10px 0 25px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    text-shadow: 1px 2px 4px rgba(184, 95, 112, 0.15);
 }
 
 #letterText {
     font-family:
         "Quicksand",
         sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.8;
     color: #4B5558;
@@ -184,11 +203,14 @@ button:active {
 .signature {
     margin-top: 35px;
     text-align: right;
-    font-family: cursive;
-    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
     color: #B85F70;
+    text-shadow: 1px 2px 4px rgba(184, 95, 112, 0.15);
 }
-
 /* =========================================
    MUSIC
 ========================================= */
@@ -324,31 +346,93 @@ button:active {
 }
 
 /* =========================================
-   MOBILE
+   MOBILE - ANDROID / IPHONE
 ========================================= */
+
 @media (max-width: 600px) {
+
+    /* ---------- GENERAL ---------- */
+
+    .scene {
+        padding: 20px;
+    }
+
+    /* ---------- SCENE 1 - INTRO ---------- */
+
+    .intro-image video {
+        width: 170px;
+        height: 170px;
+    }
+
     h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     h2 {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .intro-text {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 340px;
     }
 
-    .letter {
-        padding: 25px;
-    }
-
-    #letterText {
+    button {
+        margin-top: 20px;
+        padding: 13px 30px;
         font-size: 17px;
     }
 
+    /* ---------- SCENE 2 ---------- */
+
+    .flower-image {
+        margin-bottom: 15px;
+    }
+
+    .flower-image img {
+        width: 320px;
+        max-width: 80vw;
+        height: auto;
+    }
+
+    /* ---------- LETTER ---------- */
+
+    .letter-container {
+        max-height: 88vh;
+        padding: 5px 10px;
+    }
+
+    .letter {
+        padding: 20px;
+    }
+
+    .letter h2 {
+        font-size: 22px;
+        margin: 8px 0 20px;
+    }
+
+    #letterText {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .signature {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+
+    /* ---------- DECORATION ---------- */
+
     .flower-decoration {
         font-size: 45px;
+    }
+
+    /* ---------- SCENE 4 ---------- */
+
+    .ending-images img {
+        width: 300px;
+        max-width: 80vw;
     }
 }
 

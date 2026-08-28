@@ -1,7 +1,8 @@
 import qrcode  # pyright: ignore[reportMissingModuleSource]
 
 # WEBSITE URL
-URL = "https://mintflowers.pages.dev/"
+URL = "https://mintflowers.netlify.app/"
+
 
 # CREATE QR
 qr = qrcode.QRCode(

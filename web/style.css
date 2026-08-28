@@ -45,11 +45,15 @@ body {
 }
 
 /* =========================================
-   INTRO
+   SCENE 1 - INTRO
 ========================================= */
+#intro {
+    background: #EAF5F7;
+}
+
 .intro-image {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin-top: 15px;
     margin-bottom: 8px;
     display: flex;
@@ -58,30 +62,31 @@ body {
 }
 
 .intro-image video {
-    width: 200px;
-    height: auto;
+    width: 180px;
+    height: 180px;
     display: block;
     object-fit: contain;
+    /* background: #EAF5F7; */
     background: transparent;
 }
 
 h1 {
     font-size: 30px;
-    margin: 5px;
+    margin: 4px 0;
     color: #C97882;
 }
 
 h2 {
     font-size: 18px;
     font-weight: 500;
-    margin: 5px 0 15px;
+    margin: 5px 0 10px;
     color: #617F87;
 }
 
 .intro-text {
     max-width: 450px;
     font-size: 15px;
-    line-height: 1.65;
+    line-height: 1.6;
     color: #60777C;
     margin: 8px 0;
 }

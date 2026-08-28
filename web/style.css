@@ -59,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #EAF5F7;
 }
 
 .intro-image video {
@@ -66,8 +67,7 @@ body {
     height: 180px;
     display: block;
     object-fit: contain;
-    /* background: #EAF5F7; */
-    background: transparent;
+    background: #EAF5F7;
 }
 
 h1 {
@@ -358,6 +358,7 @@ button:active {
 
 .ending-images {
     display: flex;
+     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 25px;
@@ -367,7 +368,7 @@ button:active {
 
 .ending-images img {
     width: 300px;
-    max-width: 42vw;
+    max-width: 80vw;
     border-radius: 18px;
     box-shadow: 0 15px 40px rgba(83, 114, 124, 0.18);
     opacity: 0;

@@ -29,6 +29,7 @@ function showScene(scene) {
 ========================================= */
 function startMusic() {
     music.volume = 0.7;
+    music.muted = false;
     music.play().then(function() {
         console.log("Music started successfully!");
     }).catch(function(error) {
@@ -104,14 +105,10 @@ letterButton.addEventListener("click", function() {
     
     clearInterval(flowerInterval);
     clearInterval(heartInterval);
-    flowerContainer.classList.add("hidden");
     flowerContainer.innerHTML = "";
-    heartContainer.classList.add("hidden");
     heartContainer.innerHTML = "";
-    
-    // Tắt toàn bộ hoa khi bước vào thư
-    document.getElementById("flowers-container").innerHTML = "";
-    document.getElementById("hearts-container").innerHTML = "";
+    flowerContainer.classList.add("hidden");
+    heartContainer.classList.add("hidden");
 });
 
 /* =========================================

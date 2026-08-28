@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MintFlowers 🌷</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- BACKGROUND EFFECTS            -->
+    <!-- ============================= -->
+
+    <div id="flowers-container"></div>
+    <div id="hearts-container"></div>
+
+
+    <!-- ============================= -->
+    <!-- SCENE 1                       -->
+    <!-- ============================= -->
+
+    <section id="intro" class="scene active">
+
+        <div class="intro-image">
+            <video autoplay loop muted playsinline>
+                <source src="assets/images/snp.webm" type="video/webm">
+            </video>
+        </div>
+
+        <h1>
+            MintFlowers
+        </h1>
+
+        <h2>
+            Cảm ơn bạn đã ghé thăm 🌷
+        </h2>
+
+        <p class="intro-text">
+
+            Cảm ơn bạn đã lựa chọn MintFlowers để gửi trao những yêu thương❤️
+            Mỗi bó hoa được trao đi đều mang theo một câu chuyện và một chút tình cảm của người gửi, vì vậy chúng mình rất mong món quà nhỏ này đã mang đến cho bạn những cảm xúc thật đẹp.
+            Nếu có một chút thời gian, hãy chia sẻ với chúng mình cảm nhận của bạn về bó hoa và trải nghiệm mua sắm nhé!
+            <br><br>
+            Như một lời cảm ơn, MintFlowers gửi tặng bạn một món quà nhỏ🎁 Nhấn "Tiếp tục" để khám phá món quà💕
+        </p>    
+
+        <button id="nextButton">
+            Tiếp tục →
+        </button>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- SCENE 2                       -->
+    <!-- ============================= -->
+
+    <section id="flowerScene" class="scene">
+
+        <p>
+            Có một điều nhỏ mình muốn gửi đến bạn...
+        </p>
+
+        <button id="letterButton">
+            Mở thư 💌
+        </button>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- SCENE 3 - LETTER              -->
+    <!-- ============================= -->
+
+    <section id="letterScene" class="scene">
+
+        <div class="letter-container">
+
+            <div class="letter">
+
+    <h2>
+        Chào bạn Như Công Chúa của tôi....... 💌
+    </h2>
+
+    <p id="letterText">
+        Chắc bạn bất ngờ lắm nhỉ? Đọc hết thư đã ùi nghe tôi nói nha:3
+        Hôm nay thì không đùa nữa, nghe nó hơi sến tí nhưng vì là sự thật nên bạn cố nghe nha. Lời đầu tiên, cảm ơn bạn đã xuất hiện trong cuộc sống của tôi và làm nó thêm nhiều màu sắc, cảm ơn bạn vì đã ủng hộ đam mê của tôi cho dù không phải người xuất thân từ karate, và điều này khiến tôi rất vui ☺️
+        Bằng phép màu nào đó mà từ người khó ưa, bạn trở thành người đầu tiên tôi nghĩ đến (đương nhiên là trừ lúc công việc bận túi bụi stress các kỉu ùi), và là người tôi muốn cùng làm mọi thứ. Tôi biết là thời gian quen nhau chưa lâu, gặp nhau cũng ít, nhưng mỗi lần gặp thì tôi đều không muốn nó kết thúc, dù là không có chuyện gì để nói nhưng với tôi thì chỉ cần thấy bạn là đủ rồi.
+        Tình cảm dành cho bạn lớn dần, tôi nghĩ nó đủ để bạn cảm nhận được, là sự nghiêm túc, là quan tâm, là chân thành, là những lần đi cùng bạn không đoái hoài thời gian. Tôi thích cái cách bạn đối xử với mọi người, thích nói chuyện cùng bạn, thích nhìn bạn cười, nhìn bạn ngủ, thích đi đây đó cùng bạn, ở cạnh chắc là từ ngắn nhất để  
+        Kết quả ngày hôm nay có ra sao, thì tôi vẫn sẽ không hối hận vì đã viết ra những lời này, và tôi vẫn sẽ luôn ủng hộ, ở cạnh bạn như một người đồng hành mà bạn có thể tin tưởng.
+        Mở bài chỉ dài đến đây thui, cảm ơn bạn đã đọc đến đây mà không đấm tôi phát nào, có đấm thì tôi cũng ngã đấy vì tôi đang run lắm rồi^^
+        <br><br>
+    </p>
+    <div class="signature">
+        With love,<br>
+        Ngoan Xink Eooo 😇
+    </div>
+</div>
+
+<button id="endingButton" class="small-button">
+    Tiếp tục ♡
+</button>
+
+</div>
+
+</section>
+
+<!-- ============================= -->
+<!-- SCENE 4 - KẾT                 -->
+<!-- ============================= -->
+
+<section id="endingScene" class="scene">
+
+    <div class="ending-images">
+
+        <img
+            id="endingImage1"
+            src="assets/images/scene4_1.jpg"
+            alt="">
+
+        <img
+            id="endingImage2"
+            src="assets/images/scene4_2.jpg"
+            alt="">
+
+    </div>
+
+</section>
+
+        <!-- MUSIC -->
+
+        <div class="music-player">
+
+            🎵
+
+            <span>
+                Đang phát một bài hát dành cho bạn...
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- AUDIO                         -->
+    <!-- ============================= -->
+
+    <audio id="backgroundMusic" loop preload="auto">
+
+        <source
+            src="assets/music/givemeforever.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

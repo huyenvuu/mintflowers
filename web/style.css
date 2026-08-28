@@ -48,7 +48,8 @@ body {
    INTRO
 ========================================= */
 .intro-image {
-    width: 220px;
+    width: 200px;
+    height: 200px;
     margin-top: 15px;
     margin-bottom: 8px;
     display: flex;
@@ -57,9 +58,10 @@ body {
 }
 
 .intro-image video {
-    width: 220px;
-    height: auto;
+    width: 200px;
+    height: 200px;
     display: block;
+    object-fit: contain;
     margin: 0 auto;
     background: transparent;
 }
@@ -137,7 +139,7 @@ button:active {
 ========================================= */
 .letter-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 830px;
     max-height: 86vh;
     overflow-y: auto;
     padding: 10px 20px;

@@ -55,7 +55,7 @@ function createFlower() {
     const flower = document.createElement("div");
     flower.className = "falling-flower";
 
-    const flowers = ["🌸", "🌷", "🌹", "🩵", "🌼", "💮"];
+    const flowers = ["🌸", "🌷", "🌹", "🌼"];
 
     const randomFlower = Math.floor(Math.random() * flowers.length);
     flower.innerText = flowers[randomFlower];

@@ -211,6 +211,17 @@ button:active {
     color: #B85F70;
     text-shadow: 1px 2px 4px rgba(184, 95, 112, 0.15);
 }
+
+.letter-image {
+    position: absolute;
+    bottom: 25px;       /* Cách mép dưới bức thư 25px */
+    left: 30px;         /* Cách mép trái bức thư 30px */
+    width: 90px;        /* Kích thước nhỏ gọn fit bức thư */
+    height: auto;       /* Giữ đúng tỷ lệ khung hình */
+    border-radius: 8px; /* Bo tròn nhẹ góc ảnh cho mềm mại */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Tạo bóng đổ nhẹ */
+    object-fit: cover;
+}
 /* =========================================
    MUSIC
 ========================================= */
@@ -426,8 +437,36 @@ button {
     font-size: clamp(36px, 10vw, 45px);
 }
 
-/* ---------- SCENE 4 - ENDING ---------- */
+/* =========================================
+   SCENE 4 - ENDING & CANVAS
+========================================= */
+
+/* Khung chứa Scene 4 */
+#endingScene {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Canvas trái tim làm nền phía sau */
+#heartCanvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Nằm dưới ảnh */
+    pointer-events: none;
+}
+
+/* Khung chứa ảnh sản phẩm/kết thúc */
 .ending-images {
+    position: relative;
+    z-index: 2; /* Nằm đè lên Canvas trái tim */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -437,16 +476,19 @@ button {
     max-width: 700px;
 }
 
+/* Thiết lập hình ảnh */
 .ending-images img {
     width: min(300px, 82vw);
     max-width: 100%;
     border-radius: 18px;
-    box-shadow: 0 15px 40px rgba(83, 114, 124, 0.18);
+    box-shadow: 0 15px 40px rgba(83, 114, 124, 0.25);
     opacity: 0;
     transform: translateY(25px) scale(0.95);
     object-fit: cover;
+    backdrop-filter: blur(4px); /* Làm nổi bật khung ảnh trên nền hạt */
 }
 
+/* Animation hiển thị ảnh */
 #endingImage2.show {
     animation: imageAppear 1.2s ease forwards;
 }
